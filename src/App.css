@@ -249,14 +249,8 @@
   line-height: 1.05;
   letter-spacing: -0.045em;
 }
-.profile-focus > p {
-  margin: 12px 0 0;
-  color: var(--secondary);
-  font-size: 12px;
-  line-height: 1.6;
-}
 .focus-label {
-  margin-top: 20px;
+  margin-top: 22px;
   color: var(--muted);
   font: 8px ui-monospace, SFMono-Regular, Consolas, monospace;
   letter-spacing: 0.1em;
@@ -413,16 +407,20 @@
   gap: 10px;
 }
 .project-title-row h2 {
+  min-width: 0;
   margin: 5px 0 0;
   font-size: 21px;
   font-weight: 700;
   letter-spacing: -0.03em;
+  overflow-wrap: break-word;
 }
 .featured-card .project-title-row h2 {
   font-size: 27px;
 }
 .project-type {
+  min-width: 0;
   max-width: 45%;
+  flex: 0 1 auto;
   padding: 5px 7px;
   border: 1px solid var(--line);
   border-radius: 5px;
@@ -612,7 +610,7 @@
 }
 
 .skills-card {
-  grid-column: span 7;
+  grid-column: span 6;
   padding: 19px 20px;
 }
 .card-heading .eyebrow {
@@ -661,7 +659,7 @@
   color: var(--teal);
 }
 .education-card {
-  grid-column: span 5;
+  grid-column: span 6;
   padding: 19px 20px;
 }
 .education-card .card-heading {
@@ -670,6 +668,7 @@
 .education-entry {
   display: grid;
   grid-template-columns: 29px minmax(0, 1fr);
+  align-items: start;
   gap: 10px;
   padding: 11px 0;
   border-top: 1px solid var(--line);
@@ -690,9 +689,10 @@
 }
 .education-entry p {
   margin: 4px 0 0;
-  color: var(--secondary);
-  font-size: 11px;
-  line-height: 1.5;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.45;
+  overflow-wrap: break-word;
 }
 .education-period {
   display: block;
@@ -884,6 +884,7 @@
   }
   .header-location {
     font-size: 10px;
+    display: none;
   }
   .bento-grid {
     grid-template-columns: minmax(0, 1fr);
@@ -986,7 +987,7 @@
   }
 }
 
-@media (max-width: 365px) {
+@media (max-width: 420px) {
   .site-nav {
     gap: 7px 9px;
   }

@@ -160,7 +160,6 @@ function App() {
           <aside className="profile-focus" aria-label="Current study and technology focus">
             <span className="eyebrow">CURRENT FOCUS</span>
             <h2>Building across<br />the stack.</h2>
-            <p>MCA at NIIS Institute of Engineering & Technology, Bhubaneswar.</p>
             <span className="focus-label">TOOLS IN MY PROJECTS</span>
             <ul className="focus-stack">
               {["React", "TypeScript", "Node.js", "Express", "MongoDB"].map((item) => <li key={item}>{item}</li>)}
@@ -206,7 +205,7 @@ function App() {
         </section>
       </div>
 
-      <footer className="page-footer"><span>AMAR ANURAG PRAHARAJ</span><span>REACT <i>·</i> VITE <i>·</i> 2026</span><a href="#top">BACK TO TOP ↑</a></footer>
+      <footer className="page-footer"><span>© 2026 Amar Anurag Praharaj</span><a href="#top">Back to top ↑</a></footer>
     </main>
   );
 }
