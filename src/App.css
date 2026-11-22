@@ -1020,3 +1020,77 @@
     animation-iteration-count: 1 !important;
   }
 }
+
+/* Clearer type hierarchy and more comfortable reading sizes. */
+.bento-page { width: min(100% - 48px, 1200px); }
+.page-header { margin-bottom: 22px; }
+.site-nav a { font-size: 14px; font-weight: 550; }
+.header-location { font-size: 13px; }
+.bento-grid { gap: 16px; }
+.bento-card { border-radius: 14px; box-shadow: 0 10px 30px rgb(0 0 0 / 9%); }
+.profile-card { padding: 26px 28px; }
+.profile-heading h1 { font-size: clamp(30px, 3.5vw, 42px); }
+.role-line { font-size: 16px; }
+.profile-summary { font-size: 16px; line-height: 1.7; }
+.profile-topline { font-size: 12px; }
+.profile-focus h2 { font-size: clamp(30px, 3.4vw, 42px); }
+.eyebrow { font-size: 11px; }
+.card-heading h2 { font-size: 23px; }
+.project-copy { padding: 20px 22px 18px; }
+.featured-card .project-copy { padding: 27px 30px; }
+.project-title-row h2 { font-size: 24px; }
+.featured-card .project-title-row h2 { font-size: 32px; }
+.project-type { font-size: 12px; }
+.project-copy > p { font-size: 15px; line-height: 1.7; }
+.project-copy > .project-detail { font-size: 14px; }
+.tech-list li { font-size: 12px; padding: 5px 9px; }
+.project-links a { font-size: 13px; }
+.focus-label { font-size: 10px; }
+.focus-stack li { font-size: 12px; padding: 6px 10px; }
+.resume-button { min-height: 42px; padding-inline: 15px; font-size: 13px; }
+.social-links a { min-height: 40px; padding-inline: 10px; font-size: 12px; }
+.profile-foot > span { font-size: 13px; }
+.skills-card, .education-card { padding: 23px 24px; }
+.skill-group h3 { font-size: 14px; }
+.skill-group li { font-size: 13px; }
+.education-entry h3 { font-size: 15px; }
+.education-entry p { font-size: 13px; }
+.education-period { font-size: 12px; }
+.certifications h3 { font-size: 11px; }
+.certifications p { font-size: 13px; }
+.contact-card { min-height: 124px; padding: 23px 26px; }
+.contact-card h2 { font-size: 25px; }
+.contact-email { font-size: 14px; }
+.contact-socials a { font-size: 12px; }
+.page-footer { font-size: 11px; }
+.section-divider { font-size: 10px; }
+
+@media (max-width: 850px) {
+  .bento-page { width: min(100% - 36px, 700px); }
+  .site-nav a { font-size: 13px; }
+  .skills-card, .education-card { padding: 20px; }
+}
+
+@media (max-width: 620px) {
+  .bento-page { width: calc(100% - 24px); }
+  .bento-grid { gap: 12px; }
+  .profile-card { padding: 19px 17px 15px; }
+  .profile-heading h1 { font-size: clamp(27px, 8vw, 34px); }
+  .role-line { font-size: 14px; }
+  .profile-summary { font-size: 15px; }
+  .site-nav a { font-size: 12px; }
+  .project-copy, .featured-card .project-copy, .project-card .project-copy { padding: 18px; }
+  .featured-card .project-title-row h2 { font-size: 28px; }
+  .project-title-row h2 { font-size: 22px; }
+  .project-copy > p { font-size: 14px; }
+  .project-copy > .project-detail { font-size: 13px; }
+  .skills-card, .education-card { padding: 18px; }
+  .contact-card { padding: 18px; }
+  .page-footer { font-size: 10px; }
+}
+
+@media (max-width: 420px) {
+  .site-nav a { font-size: 11px; }
+  .profile-foot > span { font-size: 11px; }
+  .resume-button { font-size: 12px; }
+}
